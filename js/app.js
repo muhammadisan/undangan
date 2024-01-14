@@ -122,12 +122,18 @@ const util = (() => {
         let countDownDate = (new Date(document.getElementById('tampilan-waktu').getAttribute('data-waktu').replace(' ', 'T'))).getTime();
 
         setInterval(() => {
-            let distance = Math.abs(countDownDate - (new Date()).getTime());
-
-            document.getElementById('hari').innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
-            document.getElementById('jam').innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            document.getElementById('menit').innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            document.getElementById('detik').innerText = Math.floor((distance % (1000 * 60)) / 1000);
+            let distance = countDownDate - (new Date()).getTime();
+            if (distance >= 0) {
+                document.getElementById('hari').innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+                document.getElementById('jam').innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                document.getElementById('menit').innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                document.getElementById('detik').innerText = Math.floor((distance % (1000 * 60)) / 1000);
+            } else {
+                document.getElementById('hari').innerText = 0;
+                document.getElementById('jam').innerText = 0;
+                document.getElementById('menit').innerText = 0;
+                document.getElementById('detik').innerText = 0;
+            }
         }, 1000);
     };
 
@@ -202,7 +208,18 @@ const util = (() => {
 
     const buka = async (button) => {
         button.disabled = true;
-        document.querySelector('body').style.overflowY = 'scroll';
+        let body = document.querySelector('body');
+        body.style.overflowY = 'scroll';
+
+        // let timerId;
+        // function initTimer() {
+        //     timerId = setInterval(() => body.scrollBy(0, 1), 50);
+        // }
+        // initTimer();
+
+        // body.addEventListener("touchstart", () => { clearInterval(timerId) }, { passive: true });
+        // body.addEventListener("touchend", initTimer, { passive: true });
+
         AOS.init();
         audio.play();
 

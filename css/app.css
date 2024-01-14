@@ -7,6 +7,10 @@ body {
     padding: 0 !important;
     -ms-overflow-style: none !important;
     scrollbar-width: none !important;
+    scroll-behavior: smooth;
+    background-image: url("../assets/images/bokeh.gif");
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
 }
 
 body::-webkit-scrollbar {
@@ -14,8 +18,11 @@ body::-webkit-scrollbar {
 }
 
 .font-esthetic {
-    font-family: 'Sacramento', cursive !important;
+    font-family: 'Tangerine', serif !important;
     color: #ffffff !important;
+    mix-blend-mode: difference;
+    /* -webkit-filter: invert(100%);
+    filter: invert(100%) */
 }
 
 .font-arabic {
@@ -29,6 +36,18 @@ body::-webkit-scrollbar {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+}
+
+.bg-couple {
+    background-color: #ffffff;
+}
+
+.bg-cowo {
+    background-color: #ffffff;
+}
+
+.bg-cewe {
+    background-color: #ffffff;
 }
 
 .img-crop>img {
@@ -50,7 +69,11 @@ body::-webkit-scrollbar {
     inset: 0 !important;
     width: 100%;
     height: 100%;
-    background-color: #111111;
+    /* background-color: #72305c; */
+    background-image: url("../assets/images/love.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     z-index: 1056 !important;
 }
 
