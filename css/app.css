@@ -3,17 +3,21 @@ html {
 }
 
 body {
+    background-color: #9BB7A2;
     color: black !important;
     font-family: 'Josefin Sans', sans-serif ;
     padding: 0 ;
     -ms-overflow-style: none ;
     scrollbar-width: none ;
     scroll-behavior: smooth;
+    margin: auto;
+    max-width: 500px;
     /* background-color: aquamarine; */
-    background-image: url("../assets/images/pastel.jpg");
+    /* background-image: url("../assets/images/pastel.jpg"); */
     /* background-image: url("../assets/images/window.jpg"); */
     /* background-position: center; */
-    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat;  */
     /* background-size: contain; */
 }
 
@@ -23,7 +27,7 @@ body::-webkit-scrollbar {
 
 .font-esthetic {
     font-family: 'Tangerine', serif ;
-    /* color: white; */
+    color: black;
     /* mix-blend-mode: difference; */
 }
 
@@ -69,14 +73,16 @@ body::-webkit-scrollbar {
 .loading-page {
     position: fixed;
     inset: 0 ;
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    max-width: 500px;
+    margin: auto;
+    /* height: 100%; */
     /* background-color: #72305c; */
     background-image: url("../assets/images/love.gif");
     /* background-image: url("../assets/images/window.jpg"); */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     z-index: 1056 ;
 }
 
@@ -135,18 +141,28 @@ body::-webkit-scrollbar {
 }
 
 .dark-section {
-    /* background-color: #f3ac13 ; */
+    background-color: #f3ac13 ;
     color: black;
     background-image: url("../assets/images/roses2.jpg");
     background-position: center;
-    background-size: cover;
     margin-top: -0.5rem;
     margin-bottom: -0.5rem;
 }
 
+.container {
+    /* background-color: #f3ac13 ; */
+    color: black;
+    background-image: url("../assets/images/pastel.jpg");
+    /* background-position: center;
+    background-size: contain; */
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+
 footer {
     /* background-color: #f3ac13 ; */
-    background-image: url("../assets/images/pastel.jpg");
+    /* background-image: url("../assets/images/pastel.jpg"); */
     margin-top: -0.5rem;
     padding-bottom: 5rem;
 }
@@ -157,5 +173,5 @@ h1 {
 } */
 
 path {
-    fill: transparent;
+    fill: #FBFAF8;
 }
