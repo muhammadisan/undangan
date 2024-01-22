@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #9BB7A2;
+    background-color: #9CB8A5;
     /* color: black !important; */
     font-family: 'Josefin Sans', sans-serif;
     padding: 0;
@@ -192,9 +192,9 @@ nav {
 .container {
     /* background-color: #f3ac13 ; */
     color: black;
-    background-image: url("../assets/images/pastel.jpg");
-    /* background-position: center;
-    background-size: contain; */
+    background-image: url("../assets/images/pastel1.jpg");
+    /* background-position: center; */
+    background-size: 650px;
     padding: 2px;
     margin-top: -0.5rem;
     margin-bottom: -0.5rem;
