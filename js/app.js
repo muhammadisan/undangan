@@ -155,16 +155,16 @@ const util = (() => {
     };
 
     const tamu = () => {
-        let name = (new URLSearchParams(window.location.search)).get('to');
-
-        if (!name) {
-            document.getElementById('nama-tamu').remove();
-            return;
-        }
-
         let div = document.createElement('div');
-        div.classList.add('m-2');
-        div.innerHTML = `<p class="mt-0 mb-1 mx-0 p-0 text-light">Kepada Yth Bapak/Ibu/Saudara/i</p><h2 class="text-light">${escapeHtml(name)}</h2>`;
+        div.classList.add('mx-2');
+        div.classList.add('mt-5')
+
+        let name = (new URLSearchParams(window.location.search)).get('to');
+        if (!name) name = "Tamu Undangan";
+
+        div.innerHTML = `<p class="text-dark">Kepada Yth Bapak/Ibu/Saudara/i</p>
+                        <h2 class="text-dark">${escapeHtml(name)}</h2>`
+        if (name != "Tamu Undangan") div.innerHTML += `<p class="text-dark mx-4">Mohon maaf bila ada kesalahan penulisan nama atau gelar</p>`
 
         // document.getElementById('form-nama').value = name;
         document.getElementById('nama-tamu').appendChild(div);
