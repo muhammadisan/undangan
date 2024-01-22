@@ -209,6 +209,10 @@ const util = (() => {
     const buka = async (button) => {
         button.disabled = true;
         let body = document.querySelector('body');
+        let main = document.querySelector('main');
+        let footer = document.querySelector('footer');
+        main.style.display = 'block';
+        footer.style.display = 'block';
         body.style.overflowY = 'scroll';
 
         // let timerId;
