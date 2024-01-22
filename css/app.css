@@ -84,13 +84,13 @@ nav {
     margin: auto;
     /* height: 100%; */
     background-color: white;
-    background-image: url("../assets/images/love2.gif");
+    background-image: url("../assets/images/heart.gif");
     /* background-image: url("../assets/images/window.jpg"); */
     /* mix-blend-mode: difference; */
     background-repeat: no-repeat;
     /* background-position: center; */
     background-size: contain;
-    background-position-y: 20%;
+    /* background-position-y: 10%; */
     z-index: 1056;
 }
 
