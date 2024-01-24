@@ -203,7 +203,7 @@ nav {
     background-size: cover;
     margin-top: -0.5rem;
     margin-bottom: -0.5rem; */
-    padding: 2px;
+    padding: 4px;
 }
 
 #mempelai {
@@ -232,7 +232,7 @@ nav {
     background-image: url("../assets/images/pastel1.jpg");
     /* background-position: center; */
     background-size: 650px;
-    padding: 2px;
+    padding: 4px;
     margin-top: -0.5rem;
     margin-bottom: -0.5rem;
 }
